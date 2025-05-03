@@ -52,8 +52,8 @@ body {
     height: auto;
     border: none;
     background: #000;
-    aspect-ratio: 16/9;
-    max-height: 80vh;
+    /* aspect-ratio: 16/9; */
+    max-height: 100vh;
     object-fit: contain;
 }
 
