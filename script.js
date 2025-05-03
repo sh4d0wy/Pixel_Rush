@@ -6,7 +6,7 @@ const connect = async()=>{
     await tonConnectUI.openModal();
 */
 
-window.connectWallet = async () => {
+const connectWallet = async () => {
     try {
         alert('Connecting to wallet...');
         await tonConnectUI.openModal();
