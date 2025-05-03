@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixel Rush</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 </head>
 <body>
-    <button id="btn" onClick="connect()">Connect Wallet</button>
+    <!-- <button id="btn" onClick="connect()">Connect Wallet</button> -->
+    <div id="game-container">
+        <iframe 
+            id="unityGame" 
+            src="Pixel_Rush_Game/index.html" 
+            frameborder="0"
+            allow="autoplay; fullscreen; pointer-lock"
+            allowfullscreen
+        ></iframe>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
