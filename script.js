@@ -8,11 +8,13 @@ const connect = async()=>{
 
 window.connectWallet = async () => {
     try {
+        alert('Connecting to wallet...');
         await tonConnectUI.openModal();
         if (window.unityInstance) {
             window.unityInstance.SendMessage('WalletManager', 'OnWalletConnected', 'success');
         }
     } catch (error) {
+        alert('Error connecting to wallet: ' + error.message);
         if (window.unityInstance) {
             window.unityInstance.SendMessage('WalletManager', 'OnWalletConnected', 'error');
         }
