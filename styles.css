@@ -1,5 +1,7 @@
 body {
- 
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
 }
 
 #btn{
@@ -49,10 +51,10 @@ body {
 
 #unityGame {
     width: 100%;
-    height: auto;
+    height: 100vh;
     border: none;
     background: #000;
-    /* aspect-ratio: 16/9; */
+    aspect-ratio: 16/9;
     max-height: 100vh;
     object-fit: contain;
 }
